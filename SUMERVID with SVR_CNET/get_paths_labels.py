@@ -12,8 +12,8 @@ all_info_all = []
 classes_list = ['hand_ties', 'suture_throws', 'thread_cuts', 'background']
 classes = { 'hand_ties':1, 'suture_throws': 2, 'thread_cuts':3, 'background': 4}
 
-base_path = '/home/calvinap/SUMER-VID/pytorch_implementation/data_v5.2_fake/'
-save_path = '/home/calvinap/SUMER-VID/pytorch_implementation/'
+base_path = ""  # TODO: set local path — project root
+save_path = ""  # TODO: set local path — output folder
 
 cls_paths = [os.path.join(base_path, i) for i in classes_list]
 

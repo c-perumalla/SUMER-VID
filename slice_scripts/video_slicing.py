@@ -8,12 +8,12 @@ import xlrd
 from moviepy.video.io.ffmpeg_tools import ffmpeg_extract_subclip
 
 # Start with
-DIR_PATH = r'C:\Users\Carla Pugh\PycharmProjects\VideoSlicing\Annotations'
+DIR_PATH = ""  # TODO: set local path — folder containing the annotation spreadsheet
 FILENAME = r'SIM R01 Annotation Table_local_copy_downloaded_feb_19_2021.xlsx'
 FILEPATH = os.path.join(DIR_PATH, FILENAME)
-VIDPATH = r'C:\Users\Carla Pugh\Box\Pugh Lab Shared Drive\4. Data Base\ACS-October2019\ACS 2019 Aligned Videos'
-OUTPUTPATH = r'C:\Users\Carla Pugh\PycharmProjects\VideoSlicing'
-PIDS_PATH = r'C:\Users\Carla Pugh\PycharmProjects\VideoSlicing\pids_seen_so_far.txt'
+VIDPATH = ""  # TODO: set local path — folder containing the source session videos
+OUTPUTPATH = ""  # TODO: set local path — output folder for the sliced clips
+PIDS_PATH = ""  # TODO: set local path — file tracking participant IDs already processed
 
 def get_sec(time_str):
     """Get Seconds from time. COPIED FROM STACK OVERFLOW"""

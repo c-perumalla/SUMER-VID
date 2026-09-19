@@ -1,0 +1,15 @@
+# Versions are not pinned to what these experiments were run against (2021);
+# the notebooks predate parts of the current TensorFlow API.
+
+tensorflow
+keras
+keras-video-generators      # VideoFrameGenerator, used by the model_2.x notebooks
+torch
+torchvision
+numpy
+scikit-learn
+matplotlib
+Pillow
+moviepy                     # video slicing
+xlrd<2.0                    # >=2.0 dropped .xlsx support, which slice_scripts needs
+ipywidgets                  # notebook progress bars

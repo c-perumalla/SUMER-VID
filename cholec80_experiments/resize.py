@@ -5,13 +5,14 @@ import subprocess
 import os
 import glob
 
-outdir = r"C:\Users\calvinap\SUMER-VID\cholec80\cholec80\data_resize"
+outdir = ""  # TODO: set local path — output folder
+viddir = ""  # TODO: set local path — folder containing the source videos
 
 def main():
     if not os.path.exists(outdir):
         os.mkdir(outdir)
     test = 'video01'
-    for video in glob.glob(r"C:\Users\calvinap\SUMER-VID\cholec80\cholec80\videos\video*\*"):
+    for video in glob.glob(os.path.join(viddir, "video*", "*")):
         base, name = os.path.split(video)
         video_folder = base.split('\\')[-1]
         print(video)

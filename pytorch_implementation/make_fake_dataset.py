@@ -13,11 +13,11 @@ import os
 import glob 
 import shutil
 
-data = "/mnt/c/Users/calvinap/SUMER-VID/data_v5.1"
-base = "/home/calvinap/SUMER-VID/pytorch_implementation/"
+data = ""  # TODO: set local path — dataset root
+base = ""  # TODO: set local path — project root
 real_fake_dict = {'suture_throws': os.path.join(base,'throw.jpg'), 'thread_cuts':os.path.join(base,'cut.jpg'), 'hand_ties':os.path.join(base,'tie.jpg')}
 
-path_for_fake_data = '/home/calvinap/SUMER-VID/pytorch_implementation/data_v5.2_fake/'
+path_for_fake_data = ""  # TODO: set local path — output folder for the generated dummy dataset
 os.mkdir(path_for_fake_data)
 
 for class_name in os.listdir(data):

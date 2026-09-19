@@ -6,8 +6,8 @@ import os.path
 import subprocess
 
 classes = ['hand_ties', 'thread_cuts', 'suture_throws']
-video_path = r"C:\Users\calvinap\SUMER-VID\data_v5"
-out_path = r"C:\Users\calvinap\SUMER-VID\data_v5.1"
+video_path = ""  # TODO: set local path — folder containing the input videos
+out_path = ""  # TODO: set local path — output folder
 
 
 def convert(folder_with_videos, cls):

@@ -64,7 +64,7 @@ class ACSDataset(Dataset):
         transforms: Transforms.compose method
         """
         self.test = test
-        self.fake_path = '/home/calvinap/SUMER-VID/pytorch_implementation/data_v5.2_fake'
+        self.fake_path = ""  # TODO: set local path — folder containing the generated dummy dataset
         self.paths = paths
         self.labels = np.asarray(labels, dtype=np.int64)[:, -1]
         self.loader = loader

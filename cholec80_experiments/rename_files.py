@@ -1,7 +1,7 @@
 import os
 
 # specify folder name
-base_path = r"C:\Users\calvinap\SUMER-VID\cholec80\cholec80\data_resize"
+base_path = ""  # TODO: set local path — project root
 
 # traverse each video folder in folder
 for video_folder in os.listdir(base_path):

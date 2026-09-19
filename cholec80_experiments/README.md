@@ -1,3 +1,5 @@
+> **Attribution:** the code in this folder is adapted from [MTRCNet-CL](https://github.com/YuemingJin/MTRCNet-CL) by Yueming Jin et al.; the original README is reproduced below. Modifications here adapt it to the SUMER-VID experiments.
+
 # MTRCNet-CL
 Pytorch implementation of our multi-task recurrent convolutional network for joint surgical phase recognition and tool presence detection.
 

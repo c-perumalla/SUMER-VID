@@ -5,11 +5,11 @@ import glob
 import os.path
 import subprocess
 
-video_path = r"C:\Users\calvinap\SUMER-VID\cholec80\cholec80\videos"
+video_path = ""  # TODO: set local path — folder containing the input videos
 cnt = 0
 folders = ['video0'+ str(i) for i in range(1,7)]
 
-for path in glob.glob(r"C:\Users\calvinap\SUMER-VID\cholec80\cholec80\videos\*.mp4"):
+for path in glob.glob(os.path.join(video_path, "*.mp4")):
     _, fname = os.path.split(path)
     fname = fname[:-4]
     if fname in folders:

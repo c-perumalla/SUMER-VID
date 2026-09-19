@@ -3,9 +3,9 @@ import os
 from moviepy.video.io.VideoFileClip import VideoFileClip
 import glob
 
-base_dir = r"C:\Users\calvinap\SUMER-VID\cholec80"
-viddir = r"C:\Users\calvinap\SUMER-VID\cholec80\cholec80\videos\*"
-annotation_path = r"C:\Users\calvinap\SUMER-VID\cholec80\cholec80\annotations"
+base_dir = ""  # TODO: set local path — dataset root
+viddir = ""  # TODO: set local path — glob matching the source videos
+annotation_path = ""  # TODO: set local path — folder containing the annotation files
 
 
 def get_sec(time_str):

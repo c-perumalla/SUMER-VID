@@ -33,8 +33,8 @@ from PIL import Image, ImageOps
 from torch.utils.tensorboard import SummaryWriter
 
 
-data_read_path = '/home/calvinap/SUMER-VID/pytorch_implementation/data/train_data_819_410_410.pkl'
-model_save_path = '/home/calvinap/SUMER-VID/pytorch_implementation/'
+data_read_path = ""  # TODO: set local path — training data pickle produced by the slice scripts
+model_save_path = ""  # TODO: set local path — folder to write model checkpoints to
 
 def pil_loader(path):
     with open(path, 'rb') as f:

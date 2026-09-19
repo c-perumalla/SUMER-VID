@@ -3,7 +3,7 @@ import numpy as np
 import pickle
 
 #root_dir = '/data/lhx/cholec'
-root_dir = r"C:\Users\calvinap\SUMER-VID\cholec80\cholec80"
+root_dir = ""  # TODO: set local path — dataset root
 img_dir = os.path.join(root_dir, 'data_resize')
 tool_dir = os.path.join(root_dir, 'tool_annotations')
 phase_dir = os.path.join(root_dir, 'phase_annotations')

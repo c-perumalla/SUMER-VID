@@ -539,9 +539,12 @@ def train_model(train_dataset, train_num_each, val_dataset, val_num_each):
     np.save(record_name, record_np)
 
 
+PATHS_LABELS_PKL = ""  # TODO: set local path — paths/labels pickle
+
+
 def main():
     train_dataset, train_num_each, val_dataset, val_num_each, _, _ = get_data(
-        r'C:\Users\calvinap\SUMER-VID\train714_val110_test275_paths_labels.pkl')
+        PATHS_LABELS_PKL)
     print('supposed train dataset size: {}'.format(len(train_dataset)))
     print('supposed train num each size: {}'.format(train_num_each))
     print('supposed val dataset size: {}'.format(len(val_dataset)))
